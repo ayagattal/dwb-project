@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- This one is for the cart logo look ki zadt hadil ;ink ta7t title kichghol y3awnk bch yokhrjolk logos ta3 cart ta3 facebook anything u just have tot taktbo
+   ri-(something) yjikom its useful so keep it o links lokhrin 3lajal fonts -->
+    <a href="#" class="cart-float"><i class="ri-shopping-cart-line"></i></a>
+
+    <!-- This part is for the logo thimg-->
+    <header>
+        <div class="nav-container">
+            <div class="logo">Happy Oven</div>
+            <button class="nav-toggle"> <i class="ri-menu-line"></i></button>
+        </div>
+    </header>
+    
+    <!-- Hada menu win ta3bzo 3la hadok 3 lines again chofo kifah dart ri-close line bch yokhrj X -->
+    <nav class="nav-menu" id="top-menu">
+      <button class="close-menu"><i class="ri-close-line"></i></button>
+      <ul class="top-menu">
+        <li class="nav-item"><a href="#shop" class="nav-link">SHOP</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">ABOUT US</a></li>
+      </ul>
+      <ul class="bottom-menu">
+        <li class="nav-item"><a href="#" class="nav-link">PROGRAMS</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
+      <div class="middle-item">
+        <a href="#" class="nav-link">WHAT'S IN MY BOX?</a>
+      </div>
+    </nav>
+    
+    <!-- This section ta3 win kayan taswira nothig much again ki ktabt ri-arrow kharj hadk -> win kayan order now-->
+    <section class="bakery-banner">
+        <div class="banner-content">
+            <h1 class="banner-title">FRESHLY BAKED HAPPINESS</h1>
+            <div class="subtitle-box">
+                <h2 class="banner-subtitle">Charm & Crust</h2>
+            </div>
+            <p class="banner-description">Indulge in our artisanal breads, cakes, and pastries made with love and the finest ingredients.</p>
+            <a href="#" class="btn">shop Now <i class="ri-arrow-right-line"></i></a>
+        </div>
+    </section>
+
+
+    <!-- Shop All-->
+<section class="shop-all-section" id="shop">
+  <div class="container">
+    <h2 class="section-title">Shop by category</h2>
+    <div class="product-categories">
+      <button class="category-button active" data-category="all">All</button>
+      <button class="category-button" data-category="bread"></button>
+      <button class="category-button" data-category="cookies">cookies</button>
+
+      <button class="category-button" data-category="pastries">Pastries</button>
+      <button class="category-button" data-category="cakes">Cakes</button>
+    </div>
+    
+<!-- Here data-category jdida 3likom we use brk bch kima n3abzo 3a all yokhrj kolsh but when we click brk 3la bread yokhrj howa thats all (we need javascript hna to make magic work)-->
+
+    <div class="product-grid">
+      <!-- salee Products -->
+      <div class="product-item" data-category="bread">
+        <div class="product-image">
+          <img src="salee.jpg" alt="Croissant">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">salee</h3>
+          <p class="product-price">400 dz</p>
+        </div>
+      </div>
+      
+      <div class="product-item" data-category="bread">
+        <div class="product-image">
+          <img src="salee1.jpg" alt="cake">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">salee</h3>
+          <p class="product-price">dz</p>
+        </div>
+      </div>
+      <div class="product-item" data-category="bread">
+        <div class="product-image">
+          <img src="salee4.jpg" alt="cake">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">salee</h3>
+          <p class="product-price">dz</p>
+        </div>
+      </div>
+
+      <div class="product-item" data-category="bread">
+        <div class="product-image">
+          <img src="salee3.jpg" alt="cake">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">salee</h3>
+          <p class="product-price">dz</p>
+        </div>
+      </div>
+      
+      
+      <!-- Pastry Products -->
+      <div class="product-item" data-category="pastries">
+        <div class="product-image">
+          <img src="macarons.jpg" alt="cake">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">macarons</h3>
+          <p class="product-price">120 dz</p>
+        </div>
+      </div>
+      
+      <div class="product-item" data-category="pastries">
+        <div class="product-image">
+          <img src="croissant.jpg" alt="cake">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">petitpain</h3>
+          <p class="product-price">20dz</p>
+        </div>
+      </div>
+      
+      <div class="product-item" data-category="pastries">
+        <div class="product-image">
+          <img src="petitpqi.jpg" alt="cake">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">coissant</h3>
+          <p class="product-price">20dz</p>
+        </div>
+      </div>
+      
+      <div class="product-item" data-category="pastries">
+        <div class="product-image">
+          <img src="newyork rolls.jpg" alt="cake">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">newyork rolls</h3>
+          <p class="product-price">450dz</p>
+        </div>
+      </div>
+      <div class="product-item" data-category="pastries">
+        <div class="product-image">
+          <img src="pavlova.jpg" alt="cake">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">pavlova</h3>
+          <p class="product-price">450dz</p>
+        </div>
+      </div>
+      <div class="product-item" data-category="pastries">
+        <div class="product-image">
+          <img src="brownies.jpg" alt="cake">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">brawnies</h3>
+          <p class="product-price">250dz</p>
+        
+        </div>
+      </div>
+      <div class="product-item" data-category="pastries">
+        <div class="product-image">
+          <img src="coffe donuts.jpg" alt="cake">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">coffe donuts</h3>
+          <p class="product-price">350dz</p>
+        </div>
+      </div>
+      <div class="product-item" data-category="pastries">
+        <div class="product-image">
+          <img src="oreo donuts.jpg" alt="cake">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">oreo donuts</h3>
+          <p class="product-price">350dz</p>
+        </div>
+      </div>
+      <!-- Cakes Products -->
+      <div class="product-item" data-category="cakes">
+      <div class="product-image">
+        <img src="raspbery.jpg" alt="cakes">
+        <div class="hover-overlay">
+          <button class="add-btn">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">raspbery cake</h3>
+        <p class="product-price">250dz</p>
+      </div>
+    </div>
+    <div class="product-item" data-category="cakes">
+      <div class="product-image">
+        <img src="lemon.jpg" alt="lcake">
+        <div class="hover-overlay">
+          <button class="add-btn">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">lemon cake</h3>
+        <p class="product-price">250dz</p>
+      </div>
+    </div>
+    <div class="product-item" data-category="cakes">
+      <div class="product-image">
+        <img src="orreo.jpg"alt="cake">
+        <div class="hover-overlay">
+          <button class="add-btn">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">oreo cake</h3>
+        <p class="product-price"> 250dz</p>
+      </div>
+    </div>
+
+    <div class="product-item" data-category="cakes">
+      <div class="product-image">
+        <img src="pistachieo.jpg"alt="cake">
+        <div class="hover-overlay">
+          <button class="add-btn">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">pistachieo cake</h3>
+        <p class="product-price"> 250dz</p>
+      </div>
+    </div>
+    <div class="product-item" data-category="cakes">
+      <div class="product-image">
+        <img src="speculoos.jpg"alt="cake">
+        <div class="hover-overlay">
+          <button class="add-btn">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3 class="product-title"> speculoos cake</h3>
+        <p class="product-price"> 250dz</p>
+      </div>
+    </div>
+    <div class="product-item" data-category="cakes">
+      <div class="product-image">
+        <img src="choclatecake.jpg"alt="cake">
+        <div class="hover-overlay">
+          <button class="add-btn">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">choclate cake</h3>
+        <p class="product-price"> 250dz</p>
+      </div>
+    </div>
+    <div class="product-item" data-category="cakes">
+      <div class="product-image">
+        <img src="teraissucake.jpg"alt="cake">
+        <div class="hover-overlay">
+          <button class="add-btn">Add to cart</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">teramissu cake</h3>
+        <p class="product-price"> 250dz</p>
+      </div>
+    </div>
+    
+      
+      
+      <!-- Cockies Products -->
+      <div class="product-item" data-category="cockies">
+        <div class="product-image">
+          <img src="#" alt="cockies">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">cockies</h3>
+          <p class="product-price">$dz</p>
+        </div>
+      </div>
+      <div class="product-item" data-category="cookies">
+        <div class="product-image">
+          <img src="s-cookies.jpg" alt="lcookies">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">lemon cookies</h3>
+          <p class="product-price">100dz</p>
+        </div>
+      </div>
+      <div class="product-item" data-category="cookies">
+        <div class="product-image">
+          <img src="choclate.jpg"alt="cake">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Chocolate Cookies</h3>
+          <p class="product-price"> 100dz</p>
+        </div>
+      </div>
+      <div class="product-item" data-category="cookies">
+        <div class="product-image">
+          <img src=";ent.jpg" alt="cookies">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">mint chip cookies</h3>
+          <p class="product-price">100 dz</p>
+        </div>
+      </div>
+      <div class="product-item" data-category="cookies">
+        <div class="product-image">
+          <img src="tropicql fruit cookies.jpg" alt="cookies">
+          <div class="hover-overlay">
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">tropical cookies</h3>
+          <p class="product-price">100 dz</p>
+        </div>
+      </div>
+      
+      
+      
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- This is for win menu ki n3abzo 3la whats in my box this one we still need to work 3liha-->
+ <!-- Cart Panel -->
+ <div class="cart-panel">
+  <div class="cart-panel-header">
+    <h2>What's in my box?</h2>
+    <button class="close-cart"><i class="ri-close-line"></i></button>
+  </div>
+  <div class="cart-panel-content">
+    <div class="empty-start" id="empty-cart-message">
+      <i class="ri-shopping-basket-2-line empty-cart-icon"></i>
+      <p>Looks like you haven't added anything yet, let's get you started</p>
+      <button class="continue-shopping-btn">Fill your box!</button>
+    </div>
+    
+    <div class="cart-items" id="cart-items">
+      <!-- Cart items will be rendered here via JS -->
+    </div>
+    
+    <div class="cart-summary" id="cart-summary">
+      <p><strong>Total:</strong> <span id="cart-total">0</span> DZD</p>
+    </div>
+    
+    <div class="view-item" id="view-item">
+      <p><strong>What do I have here:</strong></p>
+      <button class="view-btn">View Details</button>
+    </div>
+    
+    <div class="manage-box" id="manage-box">
+      <h3>Manage your box:</h3>
+      <div class="manage-box-controls">
+        <div class="manage-option">
+          <button class="add-more-btn">
+            <i class="ri-add-circle-line"></i> Add More Items
+          </button>
+        </div>
+        <div class="manage-option">
+          <button class="remove-selected-btn">
+            <i class="ri-delete-bin-2-line"></i> Remove Selected
+          </button>
+        </div>
+        <div class="manage-option">
+          <button class="clear-box-btn">
+            <i class="ri-close-circle-line"></i> Clear Box
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="checkout-controls">
+      <button class="update-cart-btn">Update Box</button>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+</div>
+          
+
+
+<!-- Overlay -->
+<div class="cart-overlay"></div>
+
+<!-- Floating Cart Icon with Item Count -->
+<a href="#" class="cart-float" id="cart-icon">
+  <i class="ri-shopping-cart-line"></i>
+  <span class="cart-count" id="cart-count"></span>
+</a>
+
+
+      <!-- This is when we click 3la item wch yokhrj-->
+
+      <section class="product-detail-section" id ="prodect-sec" style="display: none;">
+        <button class="go-back">← Go Back</button>
+        <div class="product-detail">
+          <img id="detail-image" src="croissant.png" alt="croissant">
+          <h2 id="detail-name">Croissant</h2>
+          <p id="detail-price"> DZ</p>
+          <p id="detail-views">Views: 0</p>
+          <p id="detail-sold">Sold: 0</p>
+      
+          <button class="add-to-cart-detail">Add to Cart</button>
+      
+          <div class="reviews">
+            <h3>Customer Reviews</h3>
+            
+            <!-- Review Form -->
+            <div class="review-form">
+              <div class="rating-stars">
+                <label>Your Rating:</label>
+                <div class="stars">
+                  <i class="ri-star-line star" data-rating="1"></i>
+                  <i class="ri-star-line star" data-rating="2"></i>
+                  <i class="ri-star-line star" data-rating="3"></i>
+                  <i class="ri-star-line star" data-rating="4"></i>
+                  <i class="ri-star-line star" data-rating="5"></i>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="review-message">Your Review</label>
+                <textarea id="review-message" placeholder="Share your thoughts about this product..." rows="4" required></textarea>
+              </div>
+              
+              <button type="submit" class="submit-review-btn">
+                Submit Review <i class="ri-send-plane-fill"></i>
+              </button>
+            </div>
+          </section>
+            
+
+
+ <!-- Contact -->
+ <div class="contact-popup-overlay" id="contact-popup-overlay">
+  <div class="contact-popup">
+    <div class="contact-popup-header">
+      <h2>Get in touch!</h2>
+      <button class="close-contact"><i class="ri-close-line"></i></button>
+    </div>
+    
+    <div class="contact-popup-content">
+      <div class="contact-container">
+        <div class="contact-intro">
+          <div class="contact-image">
+            <img src="bake.jpg" alt="Happy Oven Bakery" class="contact-img">
+          </div>
+          <p>We'd love to hear from you! Fill out the form and our team will get back to you as soon as possible.</p>
+        </div>
+        
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-phone">Phone Number (Optional)</label>
+            <input type="tel" id="contact-phone">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <select id="contact-subject" required>
+              <option value="" disabled selected>Select a topic</option>
+              <option value="order">Order Questions</option>
+              <option value="product">Product Questions</option>
+              <option value="feedback">Event Inquiries</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="contact-submit-btn">
+            Submit
+            <i class="ri-send-plane-fill"></i>
+          </button>
+        </form>
+      </div>
+      
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="ri-mail-line"></i>
+          <div>
+            <h3>Email Us</h3>
+            <p>contact@happyoven.com</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <i class="ri-phone-line"></i>
+          <div>
+            <h3>Call Us</h3>
+            <p>xxxxxxxxx/p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <i class="ri-map-pin-line"></i>
+          <div>
+            <h3>Visit Us</h3>
+            <p>Central uni, Algiers</p>
+          </div>
+        </div>
+        
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="ri-facebook-fill"></i></a>
+          <a href="#" class="social-link"><i class="ri-instagram-line"></i></a>
+          <a href="#" class="social-link"><i class="ri-twitter-x-line"></i></a>
+          <a href="#" class="social-link"><i class="ri-pinterest-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="contact.js"></script>
+
+</body>
+</html>
